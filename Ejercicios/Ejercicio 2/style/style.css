@@ -16,6 +16,7 @@
     background-color: white;border-radius: 10px;
     margin-left: 58px;
     padding: 60px;
+    box-shadow: 5px 5px 25px #222;
 }
 #contenedor h2{
     font-size: 46px;
