@@ -8,7 +8,7 @@ nav ul{
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
-    
+    justify-content: space-between;
 }
 nav{
     margin-right: 218px;
