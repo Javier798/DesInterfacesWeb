@@ -23,7 +23,7 @@ margin-right: 15px;
  #banner:hover{
      cursor: pointer;
  }
- .content img:hover{
+ #populares img:hover{
 cursor: pointer;
  }
  .enlaceboton:link,
