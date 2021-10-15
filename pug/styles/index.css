@@ -20,7 +20,12 @@ margin-right: 15px;
     color: #666666;
     text-decoration: none;
  }
- 
+ #banner:hover{
+     cursor: pointer;
+ }
+ .content img:hover{
+cursor: pointer;
+ }
  .enlaceboton:link,
 .enlaceboton:visited {
    border-top: 1px solid #cccccc;
