@@ -1,0 +1,73 @@
+doctype html
+head
+ title Prototipo
+ link(rel="stylesheet", href="styles/segundonivel.css")
+ link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+ meta(charset="utf-8")
+body
+ header
+  .cabecera
+    .menu
+      ul#menu
+        li 
+          a.enlaceboton(href="primernivel/primernivel.html") Catalogo
+        li 
+          a.enlaceboton Seleccion de tempotada
+        li 
+          a.enlaceboton Promociones
+        li 
+          a.enlaceboton Conocenos
+        li 
+          a.enlaceboton Contacto
+        li 
+          a.enlaceboton Identificate
+        li
+          input(
+            type='text'
+            name='buscador'
+          )
+        li 
+          select#idioma
+            option(value="Español") Es 
+            option(value="Ingles") En
+
+      img#banner(src='img/banner.png')
+  .content 
+    #imgProducto
+      img#producto(src='img/pepino.jpeg')
+    #descripcion 
+      p#tituloProducto Pepino
+      p#descripcionProducto Pepino pepinorro de pepinolandia con sabor a pepinillo de la huera de huertin el huertas habitante de villa huerta en huerton.
+      #opcionesProducto
+        p PRECIO
+        p 0€
+        i(class="fa fa-minus fa-2x" aria-hidden="true")
+        p#cantidad 0
+        i(class="fa fa-plus fa-2x" aria-hidden="true")
+        i(class="fa fa-cart-plus fa-2x" aria-hidden="true")
+footer 
+  #informaciongeneral
+     ul#principal
+       li.titulosinformacion Informacion general
+         ul.informaciones
+           li Preguntas frecuentes
+           li Entregas y horarios
+           li Cookies
+           li Politica de privacidad
+       li.titulosinformacion Sobre nosotros
+         ul.informaciones
+           li Quienes somos
+           li Donde encontrarnos
+           li Agricultura sostenible
+           li Nuestros campos
+       li.titulosinformacion Contacto
+         ul.informaciones
+           li Telefono
+           li Email
+           li Whatsapp
+       li.titulosinformacion Legal
+         ul.informaciones
+           li Aviso legal
+           li Denuncias o infracciones
+           li Servicios
+           li Condiciones generales de uso
