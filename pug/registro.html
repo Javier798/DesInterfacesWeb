@@ -11,29 +11,54 @@
 <body>
     <header>
         <div class="cabecera">
-            <div class="menu">
-                <ul id="menu">
-                    <li> <a class="enlaceboton" href="primernivel.html">Catalogo</a></li>
-                    <li> <a class="enlaceboton">Seleccion de tempotada</a></li>
-                    <li> <a class="enlaceboton">Promociones</a></li>
-                    <li> <a class="enlaceboton">Conocenos</a></li>
-                    <li> <a class="enlaceboton" href="contacto.html">Contacto</a></li>
-                    <li> <a class="enlaceboton" href="registro.html">Identificate</a></li>
-                    <li><input type="text" name="buscador"></li>
-                    <li> <select id="idioma">
-                            <option value="Español">Es </option>
-                            <option value="Ingles">En</option>
-                        </select></li>
-                </ul><img onclick="location.href='index.html';" id="banner" src="img/banner.png">
-            </div>
+            <nav>
+                <div class="menu">
+                    <ul id="menu">
+                        <li> <a class="enlaceboton" href="primernivel.html">Catalogo</a></li>
+                        <li> <a class="enlaceboton" href="index.html">Seleccion de tempotada</a></li>
+                        <li> <a class="enlaceboton" href="index.html">Promociones</a></li>
+                        <li> <a class="enlaceboton" href="index.html">Conocenos</a></li>
+                        <li> <a class="enlaceboton" href="contacto.html">Contacto</a></li>
+                        <li> <a class="enlaceboton" href="registro.html">Identificate</a></li>
+                        <li><input type="text" name="buscador"></li>
+                        <li> <select id="idioma">
+                                <option value="Español">Es </option>
+                                <option value="Ingles">En</option>
+                            </select></li>
+                    </ul><img onclick="location.href='index.html';" id="banner" src="img/banner.png">
+                </div>
+            </nav>
         </div>
         <div class="content">
-            <form>
-                <p class="titulo">Nombre<input type="text" placeholder="pepe"></p>
-                <p class="titulo">Email<input type="password" placeholder="contraseña"></p>
-            </form>
-            <p class="mas">¿Has olvidado tu contraseña?<a href="">Click aqui.</a></p>
-            <p class="mas">No eres miembro? <a href="">Registrarte.</a></p>
+            
+            <div id="registro">
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class="titulo">Email</p>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="pepe@gmail.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="titulo">Contraseña</p>
+                            </td>
+                            <td>
+                                <input type="password" placeholder="contraseña">
+                            </td>
+                        </tr>
+                    </table>
+                    </form>
+                <p class="mas">¿Has olvidado tu contraseña?<a href="">Click aqui.</a></p>
+                <p class="mas">No eres miembro? <a href="">Registrarte.</a></p>
+            </div>
+            <div id="imagen">
+                <img src="img/bienvenido.jpg" >
+            </div>
+            
         </div>
     </header>
 </body>

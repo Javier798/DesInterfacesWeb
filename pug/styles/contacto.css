@@ -3,54 +3,94 @@
     margin: 0;
     box-sizing: border-box;
 }
-#menu{
+
+#menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     list-style: none;
 }
-#menu li{
-margin-right: 15px;
+#formularioycontacto{
+    margin-left: 70px;
 }
-.enlaceboton {    font-family: verdana, arial, sans-serif;
-    font-size: 27pt;
+#tituloContacto{
+    text-align: center;
+    font-size: 50px;
+}
+#menu li {
+    margin-right: 15px;
+}
+#iconos{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+#arriba{
+    display: flex;
+}
+#abajo{
+    margin-top: 140px;
+    display: flex;
+    margin-left: 240px;
+}
+.enlaceboton {
+    font-family: verdana, arial, sans-serif;
+    font-size: 24pt;
     font-weight: bold;
     padding: 10px;
     background-color: #ffffcc;
     color: #666666;
     text-decoration: none;
- }
- #banner:hover{
+}
+.icono{
+    text-align: center;
+    width: 199px;
+    height: 60px;
+    margin-left: 280px;
+}
+#banner:hover {
     cursor: pointer;
 }
-#botonEnviar{
+#tabla{
+    float: left;
+}
+#botonEnviar {
     height: 25px;
     width: 100px;
 }
- .enlaceboton:link,
-.enlaceboton:visited {
-   border-top: 1px solid #cccccc;
-   border-bottom: 2px solid #666666;
-   border-left: 1px solid #cccccc;
-   border-right: 2px solid #666666;
+#botonEnviar:hover{
+    cursor:pointer;
 }
+    
+
+.enlaceboton:link, .enlaceboton:visited {
+    border-top: 1px solid #cccccc;
+    border-bottom: 2px solid #666666;
+    border-left: 1px solid #cccccc;
+    border-right: 2px solid #666666;
+}
+
 .enlaceboton:hover {
-   border-bottom: 1px solid #cccccc;
-   border-top: 2px solid #666666;
-   border-right: 1px solid #cccccc;
-   border-left: 2px solid #666666;
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
 }
-.content{
-    height:315px;
+
+.content {
+    height: 315px;
 }
-#banner{
+
+#banner {
     width: 100%;
     height: 180px;
+    margin-top: 25px;
 }
-.titulo{
+
+.titulo {
     padding: 10px;
+    font-size: 20px;
 }
-#principal{
+
+#principal {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -58,31 +98,39 @@ margin-right: 15px;
     padding: 40px;
     background-color: #c69d6f;
 }
-#informaciongeneral{
-    border-top:black 5px solid;;
-}
-footer{
-    position: fixed;
-bottom: 0;
-width: 100%;
+
+#informaciongeneral {
+    border-top: black 5px solid;
+    ;
 }
 
-.content input{
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.content input {
     margin-left: 35px;
 }
-.content textarea{
+
+.content textarea {
     margin-left: 35px;
 }
-.content select{
+
+.content select {
     margin-left: 35px;
 }
-.informaciones li{
+
+.informaciones li {
     padding: 5px;
 }
-.titulosinformacion{
+
+.titulosinformacion {
     margin-bottom: 5px;
 }
-#descripcion{
+
+#descripcion {
     font-size: 25px;
     padding-top: 25px;
 }
