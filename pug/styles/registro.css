@@ -16,8 +16,8 @@
 }
 #registro{
     font-size: 29px;
-    margin-top: 5%;
-    margin-left: 9%;
+    margin-top: 27%;
+    margin-left: 32%;
 }
 .enlaceboton {
     font-family: verdana, arial, sans-serif;
@@ -36,10 +36,11 @@
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    justify-content: center;
     align-content: center;
     height: 100%;
     margin-top: 50px;
+    margin-left: 227px;
+    justify-content: flex-end;
 }
 #imagen img{
     height: 250px;

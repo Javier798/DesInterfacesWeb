@@ -7,12 +7,18 @@
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     list-style: none;
+    margin-top: 13px;
 }
-
-#menu li {
-    margin-right: 15px;
+#buscador{
+    width: 190px;
+    height: 21px;
+}
+.content img{
+    width: 300px;
+    height: 168px;
+    background-color: #464131;
 }
 
 .enlaceboton {
@@ -66,7 +72,7 @@
     margin-top: 31px;
     margin-top: 0;
     padding-top: 20px;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 #populares {
@@ -76,15 +82,16 @@
     list-style: none;
 }
 
+#populares li{
+    margin-bottom: 16px;
+}
 .descripciones {
     width: 300px;
     padding-top: 15px;
 }
-
-#productospopulares {
+.content{
     background-color: #f9f3df;
 }
-
 #instruccionescompra {
     display: flex;
     flex-direction: row;
@@ -95,7 +102,7 @@
 }
 
 #titulocomprar {
-    font-size: 25px;
+    font-size: 40px;
     text-align: center;
     padding: 45px;
 }

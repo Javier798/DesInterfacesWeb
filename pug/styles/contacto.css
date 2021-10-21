@@ -12,10 +12,14 @@
 }
 #formularioycontacto{
     margin-left: 70px;
+    margin-top: 25px;
+    display: table-header-group;
 }
 #tituloContacto{
     text-align: center;
     font-size: 50px;
+    margin-bottom: 1%;
+    background-color: blanchedalmond;
 }
 #menu li {
     margin-right: 15px;
@@ -24,6 +28,7 @@
     float: left;
     display: flex;
     flex-direction: column;
+    margin-top: 55px;
 }
 #arriba{
     display: flex;
@@ -53,6 +58,7 @@
 }
 #tabla{
     float: left;
+    margin-left: 65px;
 }
 #botonEnviar {
     height: 25px;
@@ -61,8 +67,22 @@
 #botonEnviar:hover{
     cursor:pointer;
 }
-    
 
+#titulos{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14pt;
+}
+#tituloForm{
+    margin-left: 65px;
+    width: 372px;
+}
+#tituloIconos{
+    margin-right: 26%;
+}
+footer{
+    margin-top: 1%;
+}
 .enlaceboton:link, .enlaceboton:visited {
     border-top: 1px solid #cccccc;
     border-bottom: 2px solid #666666;
@@ -74,11 +94,9 @@
     border-bottom: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
 }
-
-.content {
-    height: 315px;
+#seccion{
+    display: table-header-group;
 }
-
 #banner {
     width: 100%;
     height: 180px;
@@ -104,22 +122,21 @@
     ;
 }
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 .content input {
     margin-left: 35px;
+    font-size: 20px;
 }
 
 .content textarea {
-    margin-left: 35px;
+    margin-left: 35px;  
+    width: 247px;
 }
 
 .content select {
     margin-left: 35px;
+    width: 247px;
+    font-size: 20px;
 }
 
 .informaciones li {
@@ -133,4 +150,16 @@ footer {
 #descripcion {
     font-size: 25px;
     padding-top: 25px;
+}
+#tabla div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+#enviar{
+    width: 338px;
+    height: 35px;
+}
+textarea {
+    resize: none;
 }
