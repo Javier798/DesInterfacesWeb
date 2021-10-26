@@ -7,54 +7,89 @@
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     list-style: none;
-    margin-top: 13px;
+    margin-bottom: 4px;
+    margin-right: 12%;
 }
-#buscador{
-    width: 190px;
-    height: 21px;
+
+#buscador {
+    margin-right: 4px;
 }
-.content img{
-    width: 300px;
+
+.content img {
+    width: 100%;
     height: 168px;
     background-color: #464131;
 }
 
-.enlaceboton {
-    font-family: verdana, arial, sans-serif;
-    font-size: 24pt;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #ffffcc;
-    color: #666666;
-    text-decoration: none;
+body {
+    background: #bad63b;
+}
+
+#cabecera {
+    margin-top: 4px;
+}
+
+#subrrayadoProductos {
+    border-color: #11B400;
+    margin-top: 4px;
+}
+
+#subrrayadoComoComprar {
+    border-color: #bad63b;
+    margin-top: 4px;
 }
 
 #banner:hover {
     cursor: pointer;
 }
 
+#menuLogo {
+    margin-right: 5%;
+}
+
 #populares img:hover {
     cursor: pointer;
 }
 
+#logo {
+    height: 49px;
+}
+
+#menuTotal {
+    display: flex;
+    background: #bad63b;
+    justify-content: space-around;
+}
+
+.noMostrar {
+    display: none;
+}
+
+.margenMenu {
+    margin: 10px;
+    margin-left: 0;
+    margin-right: 4px;
+}
+
 .enlaceboton:link, .enlaceboton:visited {
-    border-top: 1px solid #cccccc;
-    border-bottom: 2px solid #666666;
-    border-left: 1px solid #cccccc;
-    border-right: 2px solid #666666;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #11B400;
+    color: white;
+    text-decoration: none;
+    font-size: 18pt;
 }
 
 .enlaceboton:hover {
-    border-bottom: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+    background: #CACC0E;
 }
 
 #banner {
     width: 100%;
     height: 180px;
-    margin-top: 25px;
 }
 
 #anuncios {
@@ -63,7 +98,7 @@
     text-align: center;
     font-size: 30pt;
     color: white;
-    background-color: black;
+    background-image: url("../img/aununcio.png");
 }
 
 #popularestitulo {
@@ -73,6 +108,14 @@
     margin-top: 0;
     padding-top: 20px;
     font-size: 40px;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: solid #11B400;
+}
+
+#productospopulares {
+    background: #f2f9b6;
 }
 
 #populares {
@@ -82,16 +125,21 @@
     list-style: none;
 }
 
-#populares li{
+#populares li {
     margin-bottom: 16px;
 }
+
 .descripciones {
     width: 300px;
     padding-top: 15px;
+    cursor: pointer;
+    font-family: verdana, arial, sans-serif;
 }
-.content{
+
+.content {
     background-color: #f9f3df;
 }
+
 #instruccionescompra {
     display: flex;
     flex-direction: row;
@@ -102,9 +150,16 @@
 }
 
 #titulocomprar {
-    font-size: 40px;
     text-align: center;
-    padding: 45px;
+    margin: 31px;
+    margin-top: 31px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: solid #CACC0E;
 }
 
 #cookies {
@@ -120,7 +175,7 @@
     justify-content: space-around;
     list-style: none;
     padding: 40px;
-    background-color: #c69d6f;
+    background-color: #CACC0E;
 }
 
 #informaciongeneral {
@@ -134,4 +189,133 @@
 
 .titulosinformacion {
     margin-bottom: 5px;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+.flexsearch--wrapper {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    position: static;
+}
+
+.flexsearch--form {
+    overflow: hidden;
+    position: relative;
+}
+
+.flexsearch--input-wrapper {
+    padding: 0 66px 0 0;
+    overflow: hidden;
+}
+
+.flexsearch--input {
+    width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+
+.flexsearch {
+    padding: 0 25px 0 200px;
+}
+
+.flexsearch--input {
+    box-sizing: content-box;
+    height: 39px;
+    border-color: #11B400;
+    border-style: solid;
+    border-width: 5px;
+    color: #CACC0E;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+    -webkit-appearance: none;
+}
+
+.flexsearch--submit {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    margin-right: 8px;
+    background: transparent;
+    color: #888;
+    font-family: verdana, arial, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.flexsearch--input:focus {
+    outline: none;
+    border-color: #CACC0E;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+    color: #333;
+}
+
+.flexsearch--submit:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+input:-moz-placeholder {
+    color: #888
+}
+
+@media (max-width: 1800px) {
+    #menu {
+        margin-right: 9%;
+    }
+    .flexsearch--submit {
+        margin-right: -1px;
+    }
+}
+
+@media (max-width: 1700px) {
+    #menu {
+        margin-right: 2%;
+    }
+    #menuLogo {
+        margin-right: 1%;
+    }
+    .flexsearch--submit {
+        margin-right: 1%;
+    }
+}
+
+@media (max-width:1450px) {
+    .flexsearch--input {
+        font-size: 15px;
+        height: 31px;
+    }
+    .enlaceboton:link, .enlaceboton:visited {
+        font-family: verdana, arial, sans-serif;
+        font-weight: bold;
+        padding: 9px;
+        background-color: #11B400;
+        color: white;
+        text-decoration: none;
+        font-size: 13pt;
+    }
+    #logo {
+        height: 40px;
+    }
+    .flexsearch--submit {
+        margin-right: 2%;
+        font-size: 36px;
+    }
 }
