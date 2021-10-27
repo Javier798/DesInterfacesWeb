@@ -10,11 +10,16 @@
     justify-content: center;
     list-style: none;
     margin-bottom: 4px;
-    margin-right: 12%;
+    margin-right: 0%;
+    float: left;
+    margin-left: 6%;
+    margin-top: 2px;
 }
 
 #buscador {
-    margin-right: 4px;
+    margin-right: 1%;
+    text-align: -webkit-right;
+    float: right;
 }
 
 .content img {
@@ -46,7 +51,9 @@ body {
 }
 
 #menuLogo {
-    margin-right: 5%;
+    margin-right: 1%;
+    float: left;
+    width: 18%;
 }
 
 #populares img:hover {
@@ -54,13 +61,11 @@ body {
 }
 
 #logo {
-    height: 49px;
+    height: 36px;
 }
 
 #menuTotal {
-    display: flex;
     background: #bad63b;
-    justify-content: space-around;
 }
 
 .noMostrar {
@@ -68,9 +73,9 @@ body {
 }
 
 .margenMenu {
-    margin: 10px;
+    margin: 1%;
     margin-left: 0;
-    margin-right: 4px;
+    margin-right: 1%;
 }
 
 .enlaceboton:link, .enlaceboton:visited {
@@ -227,13 +232,12 @@ body {
 
 .flexsearch--input {
     box-sizing: content-box;
-    height: 39px;
     border-color: #11B400;
     border-style: solid;
     border-width: 5px;
     color: #CACC0E;
     font-family: 'Helvetica', sans-serif;
-    font-size: 20px;
+    font-size: 1.1vw;
     -webkit-appearance: none;
 }
 
@@ -276,6 +280,13 @@ input:-moz-placeholder {
     color: #888
 }
 
+@media(min-width:500px) {
+    .enlaceboton:link, .enlaceboton:visited {
+        font-size: 1.1vw;
+    }
+}
+
+/*
 @media (max-width: 1800px) {
     #menu {
         margin-right: 9%;
@@ -284,7 +295,9 @@ input:-moz-placeholder {
         margin-right: -1px;
     }
 }
+*/
 
+/*
 @media (max-width: 1700px) {
     #menu {
         margin-right: 2%;
@@ -295,8 +308,9 @@ input:-moz-placeholder {
     .flexsearch--submit {
         margin-right: 1%;
     }
-}
+}*/
 
+/*
 @media (max-width:1450px) {
     .flexsearch--input {
         font-size: 15px;
@@ -318,4 +332,4 @@ input:-moz-placeholder {
         margin-right: 2%;
         font-size: 36px;
     }
-}
+}*
