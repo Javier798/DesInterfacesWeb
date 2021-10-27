@@ -15,6 +15,9 @@
     margin-left: 6%;
     margin-top: 2px;
 }
+#hamburguesa{
+    display: none;
+}
 
 #buscador {
     margin-right: 1%;
@@ -279,57 +282,34 @@ body {
 input:-moz-placeholder {
     color: #888
 }
-
+#menuHamburguesa{
+    display: none;
+}
 @media(min-width:500px) {
     .enlaceboton:link, .enlaceboton:visited {
         font-size: 1.1vw;
     }
 }
 
-/*
-@media (max-width: 1800px) {
-    #menu {
-        margin-right: 9%;
-    }
-    .flexsearch--submit {
-        margin-right: -1px;
-    }
-}
-*/
+@media (max-width:927px) {
+    #hamburguesa{
+        display: block;
+        float: left;
 
-/*
-@media (max-width: 1700px) {
-    #menu {
-        margin-right: 2%;
+    } 
+    #menuHamburguesa{
+        display: flex;
+        flex-direction: column;
+        transition: 1s;
+        height: 0;
     }
-    #menuLogo {
-        margin-right: 1%;
+    #menuHamburguesa.mostrarMenu{
+        height: 189px;
     }
-    .flexsearch--submit {
-        margin-right: 1%;
+    #menu{
+        display: none;
     }
-}*/
-
-/*
-@media (max-width:1450px) {
-    .flexsearch--input {
-        font-size: 15px;
-        height: 31px;
-    }
-    .enlaceboton:link, .enlaceboton:visited {
-        font-family: verdana, arial, sans-serif;
-        font-weight: bold;
-        padding: 9px;
-        background-color: #11B400;
-        color: white;
-        text-decoration: none;
-        font-size: 13pt;
-    }
-    #logo {
+    #menuTotal{
         height: 40px;
     }
-    .flexsearch--submit {
-        margin-right: 2%;
-        font-size: 36px;
-    }
-}*
+}

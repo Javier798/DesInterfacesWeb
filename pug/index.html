@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="es">
 
 <head>
     <title>Verduritas de la huerta</title>
@@ -16,12 +17,11 @@
         <div id="cabecera">
             <nav>
                 <div id="menuTotal">
-
+                    <div id="hamburguesa"><i class="fa fa-bars" aria-hidden="true"></i></div>
                     <div id="menuLogo"><img id="logo" src="./img/Logo.PNG" alt=""></div>
                     <div id="menu">
                         <div class="margenMenu"> <a class="enlaceboton" href="primernivel.html">Catalogo</a></div>
-                        <div class="margenMenu"> <a class="enlaceboton" href="index.html">Temporada</a>
-                        </div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="index.html">Temporada</a></div>
                         <div class="margenMenu"> <a class="enlaceboton" href="index.html">Promociones</a></div>
                         <div class="margenMenu"> <a class="enlaceboton" href="index.html">Conocenos</a></div>
                         <div class="margenMenu"> <a class="enlaceboton" href="contacto.html">Contacto</a></div>
@@ -31,10 +31,19 @@
 
                     </div>
                 </div>
-                <img onclick="location.href='index.html';" id="banner" src="img/banner.png">
+                <div id="menuHamburguesa">
+                    <a class="enlaceboton" href="primernivel.html">Catalogo</a>
+                    <a class="enlaceboton" href="index.html">Temporada</a>
+                    <a class="enlaceboton" href="index.html">Promociones</a>
+                    <a class="enlaceboton" href="index.html">Conocenos</a>
+                    <a class="enlaceboton" href="contacto.html">Contacto</a>
+                    <a class="enlaceboton" href="registro.html">Identificate</a>
+                </div>
+                <img onclick="location.href='index.html';" id="banner" src="img/banner.png" alt="">
             </nav>
         </div>
     </header>
+
     <div class="content">
         <div id="anuncios">
         </div>
@@ -137,4 +146,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
+
+</html>
