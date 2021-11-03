@@ -57,48 +57,29 @@ function muestraAccion(accion) {
     
     switch (accion) {
         case "play":
-            document.getElementById("playMostrar").style.opacity = "1";
-            document.getElementById("playMostrar").style.transform="scale(10)";
-            intervalo = setInterval(() => {
-                document.getElementById("playMostrar").style.transform="scale(1)";
-                tiempo++;
-                if(tiempo==2){
-                    clearInterval(intervalo);
-                    document.getElementById("playMostrar").style.opacity = "0";    
-                    tiempo=0;
-                }
-            }, 1000);
+            document.getElementById("playMostrar").classList.add("mostrarScale");
+            document.getElementById("pauseMostrar").classList.remove("mostrarScale");
             break;
         case "pause":
-            document.getElementById("pauseMostrar").style.display = "block";
-            intervalo = setInterval(() => {
-                clearInterval(intervalo);
-                document.getElementById("pauseMostrar").style.display = "none";
-            }, 1000);
+            document.getElementById("playMostrar").classList.remove("mostrarScale");
+            document.getElementById("pauseMostrar").classList.add("mostrarScale");
             break;
         case "stop":
-            document.getElementById("stopMostrar").style.display = "block";
-            intervalo = setInterval(() => {
-                clearInterval(intervalo);
-                document.getElementById("stopMostrar").style.display = "none";
-            }, 1000);
+            document.getElementById("stopMostrar").classList.add("mostrarScale");
+            setTimeout(() => {
+                document.getElementById("stopMostrar").classList.remove("mostrarScale");
+            }, 2000);
             break;
         case "avanzar":
 
             break;
         case "mute":
-            document.getElementById("nomuteMostrar").style.display = "block";
-            intervalo = setInterval(() => {
-                clearInterval(intervalo);
-                document.getElementById("nomuteMostrar").style.display = "none";
-            }, 1000);
+            document.getElementById("nomuteMostrar").classList.add("mostrarScale");
+            document.getElementById("muteMostrar").classList.remove("mostrarScale");
             break;
         case "noMute":
-            document.getElementById("muteMostrar").style.display = "block";
-            intervalo = setInterval(() => {
-                clearInterval(intervalo);
-                document.getElementById("muteMostrar").style.display = "none";
-            }, 1000);
+            document.getElementById("muteMostrar").classList.add("mostrarScale");
+            document.getElementById("nomuteMostrar").classList.remove("mostrarScale");
             break;
         default:
             break;

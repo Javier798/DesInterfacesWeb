@@ -1,61 +1,98 @@
-#controles{
+#controles {
     display: flex;
     width: 100%;
     text-align: center;
     margin-left: 26%;
 }
-#video{
+
+#video {
     width: 100%;
     height: 521px;
 }
-#progreso{
+
+#progreso {
     margin-left: 26%;
 }
-#mostrado{
+
+#mostrado {
     width: 38%;
 }
-.fa-play{
+
+.fa-play {
     cursor: pointer;
 }
-.fa-pause{
+
+.fa-pause {
     display: none;
     cursor: pointer;
 }
-.fa-volume-mute{
-display: none;
-cursor: pointer;
-}
-.fa-volume-up{
+
+.fa-volume-mute {
+    display: none;
     cursor: pointer;
 }
-.fa-stop{
+
+.fa-volume-up {
     cursor: pointer;
 }
-#muestraAccion{
+
+.fa-stop {
+    cursor: pointer;
+}
+
+#muestraAccion {
     position: absolute;
     top: 50%;
     left: 50%;
     color: white;
     transform: translate(-50%, -50%);
 }
-#videoContainer{
+
+#videoContainer {
     width: fit-content;
     margin-left: 26%;
     position: relative;
 }
-#playMostrar{
-   opacity: 0;
-}
-#pauseMostrar{
-    display: none;
-}
-#muteMostrar{
-    display: none;
-}
-#stopMostrar{
-    display: none;
-}
-.mostrarScale{
+
+#playMostrar {
     
-    transition: transform 1s;
+    transform: scale(1,1);
+    opacity: 0;
+}
+
+#pauseMostrar {
+    display: block;
+    transform: scale(1,1);
+    opacity: 0;
+}
+
+#muteMostrar {
+    display: block;
+    transform: scale(1,1);
+    opacity: 0;
+}
+#nomuteMostrar{
+    display: block;
+    transform: scale(1,1);
+    opacity: 0;
+}
+#stopMostrar {
+    display: block;
+    transform: scale(1,1);
+    opacity: 0;
+}
+
+.mostrarScale {
+    animation: mostrarScale 2s;
+}
+
+@keyframes mostrarScale{
+    50%{
+        transform: scale(10,10);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1,1);
+        opacity: 0;
+    }
 }
