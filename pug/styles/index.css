@@ -131,6 +131,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    flex-wrap: wrap;
 }
 
 #populares li {
@@ -155,6 +156,7 @@ body {
     list-style: none;
     padding: 30px;
     padding-top: 0;
+    flex-wrap: wrap;
 }
 
 #titulocomprar {

@@ -13,10 +13,12 @@ function pause() {
 }
 function volumen(item) {
     document.getElementById("video").volume = item.value / 100;
-
+    document.getElementById("avance").innerHTML =item.value;
+    muestraAccionVideo(document.getElementById("avance"));
 }
 function stop() {
     document.getElementById("video").currentTime = 0;
+    
     muestraAccion(document.getElementById("stopMostrar"));
 }
 function videoMostrado(item) {
@@ -43,12 +45,14 @@ function mute() {
         muestraAccion(document.getElementById("muteMostrar"));
     }
 }
+
 setInterval(actualizaBarra, 500);
 function actualizaBarra() {
     var item = document.getElementById("video");
     var muestraProgreso = document.getElementById("mostrado");
     muestraProgreso.value = item.currentTime;
 }
+
 function muestraAccionVideo(item) {
     item.style.opacity="1";
     item.style.transform="scale(10,10)";
@@ -57,6 +61,7 @@ function muestraAccionVideo(item) {
         item.style.opacity="0";
     }, 2000);
 }
+
 function muestraAccion(item) {
     item.classList.add("mostrarScale");
     setTimeout(() => {
