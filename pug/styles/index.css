@@ -283,6 +283,7 @@ input:-moz-placeholder {
     color: #888
 }
 #menuHamburguesa{
+    display: none;
     opacity: 0;
 }
 @media(min-width:950px) {
@@ -297,6 +298,7 @@ input:-moz-placeholder {
         float: left;
     } 
     #menuHamburguesa{
+        
         opacity: 0;
         height: 0;
         transition: 1s;

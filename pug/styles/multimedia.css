@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     text-align: center;
-    margin-left: 26%;
+    
 }
 
 #video {
@@ -15,7 +15,7 @@
 }
 
 #mostrado {
-    width: 38%;
+    width: 80%;
 }
 
 .fa-play {
@@ -81,6 +81,11 @@
     transform: scale(1,1);
     opacity: 0;
 }
+#avance{
+    transform: scale(1,1);
+    opacity: 0;
+    transition: 1s;
+}
 
 .mostrarScale {
     animation: mostrarScale 2s;
@@ -95,4 +100,11 @@
         transform: scale(1,1);
         opacity: 0;
     }
+}
+.simboloVideo{
+    position: absolute;
+    background: whitesmoke;
+    border-radius: 15px;
+    opacity: 1;
+    transform: scale(1,1);
 }
