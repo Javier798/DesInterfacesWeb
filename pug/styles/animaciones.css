@@ -15,7 +15,8 @@
     margin-left: 6%;
     margin-top: 2px;
 }
-#hamburguesa{
+
+#hamburguesa {
     display: none;
 }
 
@@ -24,11 +25,9 @@
     text-align: -webkit-right;
     float: right;
 }
-
-.content img {
+#cuadradoRebotante img{
     width: 100%;
-    height: 168px;
-    background-color: #464131;
+    height: 100%;
 }
 
 body {
@@ -100,76 +99,8 @@ body {
     height: 180px;
 }
 
-#anuncios {
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    font-size: 30pt;
-    color: white;
-    background-image: url("../img/aununcio.png");
-}
-
-#popularestitulo {
-    text-align: center;
-    margin: 31px;
-    margin-top: 31px;
-    margin-top: 0;
-    padding-top: 20px;
-    font-size: 40px;
-    font-family: verdana, arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    border-bottom: solid #11B400;
-}
-
-#productospopulares {
-    background: #f2f9b6;
-}
-
-#populares {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    flex-wrap: wrap;
-}
-
-#populares li {
-    margin-bottom: 16px;
-}
-
-.descripciones {
-    width: 300px;
-    padding-top: 15px;
-    cursor: pointer;
-    font-family: verdana, arial, sans-serif;
-}
-
 .content {
     background-color: #f9f3df;
-}
-
-#instruccionescompra {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style: none;
-    padding: 30px;
-    padding-top: 0;
-    flex-wrap: wrap;
-}
-
-#titulocomprar {
-    text-align: center;
-    margin: 31px;
-    margin-top: 31px;
-    margin-top: 0;
-    padding-top: 20px;
-    font-size: 40px;
-    font-family: verdana, arial, sans-serif;
-    font-weight: bold;
-    font-style: italic;
-    border-bottom: solid #CACC0E;
 }
 
 #cookies {
@@ -186,19 +117,6 @@ body {
     list-style: none;
     padding: 40px;
     background-color: #CACC0E;
-}
-
-#informaciongeneral {
-    border-top: black 5px solid;
-    ;
-}
-
-.informaciones li {
-    padding: 5px;
-}
-
-.titulosinformacion {
-    margin-bottom: 5px;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////*/
@@ -284,10 +202,12 @@ body {
 input:-moz-placeholder {
     color: #888
 }
-#menuHamburguesa{
+
+#menuHamburguesa {
     display: none;
     opacity: 0;
 }
+
 @media(min-width:950px) {
     .enlaceboton:link, .enlaceboton:visited {
         font-size: 1.2vw;
@@ -295,69 +215,121 @@ input:-moz-placeholder {
 }
 
 @media (max-width:950px) {
-    #hamburguesa{
+    #hamburguesa {
         display: block;
         float: left;
-        color: green;
-    font-size: 35px;
-    } 
-    #menuHamburguesa{
-        visibility: hidden;
+    }
+    #menuHamburguesa {
         opacity: 0;
         height: 0;
         transition: 1s;
         display: flex;
         flex-direction: column;
     }
-    .flexsearch--input{
+    .flexsearch--input {
         font-size: 2vw;
     }
-    #menuHamburguesa.mostrarMenu{
+    #menuHamburguesa.mostrarMenu {
         height: 297px;
-        visibility: inherit;
         opacity: 1;
         transition: 1s;
-        
     }
-    #menu{
+    #menu {
         display: none;
     }
-    #menuTotal{
+    #menuTotal {
         height: 40px;
     }
 }
-@media (max-width:360px){
-    .content{
+
+@media (max-width:360px) {
+    .content {
         margin-left: 7px;
         margin-right: 7px;
     }
-    #populares{
+    #populares {
         flex-direction: column;
     }
-    #instruccionescompra{
+    #instruccionescompra {
         flex-direction: column;
     }
-    #banner{
+    #banner {
         height: 70px;
     }
-    #anuncios{
-        width: 100%;
-        height: 75px;
-        text-align: center;
-        font-size: 30pt;
-        color: white;
-        background-image: url(../img/aununcio.png);
-        background-size: cover;
-    }
-    #titulocomprar{
+    #titulocomprar {
         font-size: 37px;
     }
-    #principal ul{
+    #principal ul {
         list-style-type: none;
     }
-    .flexsearch--input{
+    .flexsearch--input {
         font-size: 3vw;
         height: 26px;
         width: 135px;
     }
+}
+
+#girar:focus {
+    animation: girar 1s infinite;
+}
+
+@keyframes girar {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#cuadradoRebotante {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: black;
+    transition: 2s;
+}
+.animacion1{
+    animation: rebotar 4s forwards;
+}
+.animacion2{
+    animation: rebotar2 2s forwards;
+}
+#padreRebotate {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+@keyframes rebotar {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    33% {
+        top: 400px;
+        left: 0;
+    }
+    66% {
+        left: 500px;
+        top: 0px;
+    }
+    100%{
+        left: 500px;
+        top: 400px;
+    }
+}
+
+@keyframes rebotar2 {
+    0%{
+        left: 500px;
+        top: 400px;
+    }
+    100%{
+        left: 0;
+        top: 0;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }

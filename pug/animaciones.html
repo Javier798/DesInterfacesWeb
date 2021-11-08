@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Verduritas de la huerta</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/animaciones.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <meta charset="utf-8">
+
+</head>
+
+<body>
+    <header>
+        <div id="cabecera">
+            <nav>
+                <div id="menuTotal">
+                    <div id="hamburguesa"><i class="fa fa-bars" aria-hidden="true"></i></div>
+                    <div id="menuLogo"><img id="logo" src="./img/Logo.PNG" alt=""></div>
+                    <div id="menu">
+                        <div class="margenMenu"> <a class="enlaceboton" href="primernivel.html">Catalogo</a></div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="index.html">Temporada</a></div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="index.html">Promociones</a></div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="multimedia.html">Multimedia</a></div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="contacto.html">Contacto</a></div>
+                        <div class="margenMenu"> <a class="enlaceboton" href="registro.html">Identificate</a></div>
+                    </div>
+                    <div id="buscador"><input class="flexsearch--input" type="search" placeholder="Buscar">
+
+                    </div>
+                </div>
+                <div id="menuHamburguesa">
+                    <a class="enlaceboton" href="primernivel.html">Catalogo</a>
+                    <a class="enlaceboton" href="index.html">Temporada</a>
+                    <a class="enlaceboton" href="index.html">Promociones</a>
+                    <a class="enlaceboton" href="index.html">Conocenos</a>
+                    <a class="enlaceboton" href="contacto.html">Contacto</a>
+                    <a class="enlaceboton" href="registro.html">Identificate</a>
+                </div>
+                <img onclick="location.href='index.html';" id="banner" src="img/banner.png" alt="">
+            </nav>
+        </div>
+    </header>
+
+    <div class="content">
+        <input id="girar" type="text" placeholder="Girar">
+        <div id="padreRebotate">
+            <div onclick="clickCuadrado(this);" id="cuadradoRebotante">
+                <img src="./img/calabacin.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div id="informaciongeneral">
+            <div id="cookies">
+                <p id="titulocookies">Cookies </p>
+                <p id="contenidoCookies">Este sitio emplea cookies propias y de terceros para prestar sus servicios
+                    y para analizar el tráfico. Agroboca recibe información sobre tu uso de este sitio web. Si
+                    utilizas este sitio web, se sobreentiende que aceptas el uso de cookies.</p><a id="aceptar"
+                    href="indexnocookies.html">Aceptar </a><a id="MasInformacion" href="">Mas informacion</a>
+            </div>
+            <div id="pie">
+                <ul id="principal">
+                    <li class="titulosinformacion">Informacoin general<ul class="informaciones">
+
+                            <li><a href="primernivel.html">Preguntas Frecuenntes</a></li>
+                            <li>Entregas y horarios</li>
+                            <li>Cookies</li>
+                            <li>Politica de privacidad</li>
+                        </ul>
+                    </li>
+                    <li class="titulosinformacion">Sobre nosotros<ul class="informaciones">
+                            <li>Quienes somos</li>
+                            <li>Donde encontrarnos</li>
+                            <li>Agricultura sostenible</li>
+                            <li>Nuestros campos</li>
+                        </ul>
+                    </li>
+                    <li class="titulosinformacion">Contacto<ul class="informaciones">
+                            <li>Telefono</li>
+                            <li>Email</li>
+                            <li>Whatsapp</li>
+                        </ul>
+                    </li>
+                    <li class="titulosinformacion">Legal<ul class="informaciones">
+                            <li>Aviso legal</li>
+                            <li>Denuncias o infracciones</li>
+                            <li>Servicios</li>
+                            <li>Condiciones generales de uso</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="js/animaciones.js"></script>
+</body>
+
+</html>
