@@ -45,16 +45,50 @@
     </header>
 
     <div class="content">
-        <input id="girar" type="text" placeholder="Girar">
-        <div id="padreRebotate">
-            <div onclick="clickCuadrado(this);" id="cuadradoRebotante">
-                <img src="./img/calabacin.jpg" alt="">
+        <div id="izquierda">
+            <input id="girar" type="text" placeholder="Girar">
+            <div id="padreRebotate">
+                <div onclick="clickCuadrado(this);" id="cuadradoRebotante">
+                    <img src="./img/calabacin.jpg" alt="">
+                </div>
             </div>
         </div>
+
         <div id="formulario">
+            <form action="">
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" placeholder="Telefono">
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email">
+                <label for="texto">Texto</label>
+                <input type="text" name="texto" placeholder="texto">
+                <input type="submit" value="Enviar" id="enviar">
+            </form>
+            <div class="loader">
+                <div id="cuadrado1">
+
+                </div>
+                <div id="cuadrado2">
+
+                </div>
+                <div id="cuadrado3">
+
+                </div>
+            </div>
+            <div class="limpiar">
+
+            </div>
+        </div>
+
+
+        <div class="limpiar">
 
         </div>
-        
+        <div id="carrera">
+            <img src="./img/circuito.png" alt="">
+            <img id="coche" src="./img/coche.png" alt="">
+        </div>
+        </div>
     </div>
     <footer>
         <div id="informaciongeneral">
