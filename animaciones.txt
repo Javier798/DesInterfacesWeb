@@ -1,0 +1,4 @@
+1.- Un fondon de un lago que la pasar el raton por el centro se generen unas ondas
+2.- Barra de progreso que del 0-20% azul, 20%-40$ amarilla, 40%-50% morado, 50%-70% amarillo verdoso, 70%-20% rojo, 20%-80% azul, 80%-100% verde y un reloj de arena
+3.- Una papelera que al pasar el raton por encima se abra y se baje el pedal, al sacar el raton la papelera se pone bien
+4.- Un circuito electrico que tenga una chispa amarilla y siga el circuito y encienda una bombilla
