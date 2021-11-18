@@ -1,0 +1,49 @@
+.b {
+    offset-path: path("M312.5 1H22V145L10.5 156.5L39.5 172.5L1.5 187L46.5 206L22 217V474.5H298H312.5C307.5 392 430.3 391.3 429.5 474.5H706.5V1H365");
+    animation: circuito linear 5s , agrandar linear 1s infinite;
+    position: absolute;
+    left: 18px;
+    top: 57px;
+    width: 13px;
+}
+
+@keyframes agrandar {
+    0%{
+        width: 13px;
+    }
+    50%{
+        width: 25px;
+    }
+}
+@keyframes luz {
+    47%{
+        visibility: hidden;
+    }
+    54%{
+        visibility: inherit;
+    }
+    58%{
+        visibility: hidden;
+    }
+}
+@keyframes circuito {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+#bombilla {
+    width: 109px;
+    height: 109px;
+    background-color: yellow;
+    top: 474px;
+    position: absolute;
+    left: 336px;
+    border-radius: 100%;
+    visibility: hidden;
+    animation: luz 5s;
+}

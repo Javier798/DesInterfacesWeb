@@ -1,0 +1,84 @@
+#papelera {
+
+    height: 88%;
+    width: 36%;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    right: 30%;
+    top: 31.703px;
+}
+
+#papeleraImg {
+    height: 100%;
+    width: 98%;
+    background-size: cover;
+    bottom: 0;
+    position: absolute;
+    right: 0%;
+    z-index: 1;
+    top: 11.703px;
+}
+
+body {
+    height: 98vh;
+}
+
+#parteTrasera {
+    position: absolute;
+    width: 100%;
+    top: -95px;
+    z-index: -1;
+}
+
+#pie {
+    position: absolute;
+    width: 44%;
+    margin-top: 619px;
+    margin-left: 285px;
+    transition: 3s;
+    z-index: 1;
+}
+
+#tapa {
+    position: absolute;
+    width: 104%;
+    margin-top: 5px;
+    transition: 3s;
+}
+
+#pie:hover+#tapa {
+    transform: translateY(-110px);
+}
+
+#bola {
+    z-index: 0;
+    width: 230px;
+    height: 200px;
+    position: absolute;
+    right: -196px;
+    top: -240px;
+}
+
+#pie:hover+#tapa+#bola {
+    animation: bola 3s;
+}
+
+#tapapie {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 821px;
+    position: relative;
+}
+
+#pie:hover {
+    transform: translateY(75px);
+}
+
+@keyframes bola {
+    100% {
+        right: 314px;
+        top: 160px;
+    }
+}
