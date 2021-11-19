@@ -19,7 +19,7 @@
     top: 294px;
     width: 336px;
     left: 9px;
-    animation: tirarCopa 3s forwards 5s;
+    animation: tirarCopa 3s forwards 3.5s;
 }
 
 #rueda1 {
@@ -54,7 +54,7 @@
     top: 540px;
     left: 220px;
     opacity: 0;
-    animation: fuego 3s forwards 8s;
+    animation: fuego 3s forwards 6.5s;
 }
 
 @keyframes fuego {
@@ -90,11 +90,10 @@
 @keyframes avanzacuerpo {
     70% {
         right: 78%;
-        width: 220px;
+
     }
 
     100% {
-        width: 150px;
         right: 78%;
     }
 }
