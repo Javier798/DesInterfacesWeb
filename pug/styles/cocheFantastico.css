@@ -1,3 +1,109 @@
-body{
-    background-image: url();
+#fondo {
+    height: 97vh;
+    width: 99%;
+}
+
+#fondo {
+    position: absolute;
+}
+
+#tronco {
+    position: absolute;
+    top: 530px;
+    width: 230px;
+    left: 50px;
+}
+
+#copa {
+    position: absolute;
+    top: 294px;
+    width: 336px;
+    left: 9px;
+    animation: tirarCopa 3s forwards 5s;
+}
+
+#rueda1 {
+    position: absolute;
+    right: 158px;
+    top: 714px;
+    width: 50px;
+    animation: girar linear 1s infinite, avanzarRueda1 linear 3.5s forwards;
+}
+
+#rueda2 {
+    position: absolute;
+    right: 46px;
+    top: 714px;
+    width: 50px;
+    animation: girar linear 1s infinite, avanzarRueda2 linear 3.5s forwards;
+}
+
+#cuerpo {
+    position: absolute;
+    width: 220px;
+    top: 652px;
+    right: 15px;
+    height: 115px;
+    animation: avanzacuerpo linear 5s forwards;
+
+}
+
+#fuego {
+    position: absolute;
+    width: 130px;
+    top: 540px;
+    left: 220px;
+    opacity: 0;
+    animation: fuego 3s forwards 8s;
+}
+
+@keyframes fuego {
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes girar {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes avanzarRueda1 {
+    100% {
+        position: absolute;
+        right: 86%;
+        top: 714px;
+        width: 50px;
+    }
+}
+
+@keyframes avanzarRueda2 {
+    100% {
+        position: absolute;
+        right: 80%;
+        top: 714px;
+        width: 50px;
+    }
+}
+
+@keyframes avanzacuerpo {
+    70% {
+        right: 78%;
+        width: 220px;
+    }
+
+    100% {
+        width: 150px;
+        right: 78%;
+    }
+}
+
+@keyframes tirarCopa {
+    100% {
+        left: 170px;
+        top: 404px;
+        transform: rotate(65deg);
+
+    }
 }
