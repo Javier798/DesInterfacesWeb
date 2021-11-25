@@ -7,100 +7,177 @@
 #menu {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     list-style: none;
+    margin-bottom: 4px;
+    margin-right: 0%;
+    /* float: left; */
+    margin-left: 6%;
+    margin-top: 6px;
 }
-#formularioycontacto{
-    margin-left: 70px;
-    margin-top: 25px;
-    display: table-header-group;
+
+body {
+    display: flex;
+    flex-direction: column;
 }
-#tituloContacto{
+
+#hamburguesa {
+    display: none;
+}
+
+#menuLogo {
+    margin-right: 1%;
+    /* float: left; */
+    width: 18%;
+}
+
+#logo {
+    height: 36px;
+    margin-top: 6px;
+}
+
+#menuTotal {
+    display: flex;
+    background: #bad63b;
+}
+
+.noMostrar {
+    display: none;
+}
+
+.margenMenu {
+    margin: 1%;
+    margin-left: 0;
+    margin-right: 1%;
+}
+
+#buscador {
+    margin-right: 3%; 
+    text-align: -webkit-right;
+    /* float: right; */
+    /* margin-top: 6px; */
+    margin-left: auto;
+}
+
+#formularioycontacto {
+        margin-top: 25px;
+        display: flex;
+}
+
+#tituloContacto {
     text-align: center;
-    font-size: 50px;
-    margin-bottom: 1%;
-    background-color: blanchedalmond;
+    margin: 31px;
+    margin-top: 31px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: solid #11B400;
 }
+
 #menu li {
     margin-right: 15px;
 }
-#iconos{
-    float: left;
+
+#iconos {
     display: flex;
     flex-direction: column;
     margin-top: 55px;
 }
-#arriba{
+
+#arriba {
     display: flex;
 }
-#abajo{
+
+#abajo {
     margin-top: 140px;
     display: flex;
     margin-left: 240px;
 }
-.enlaceboton {
-    font-family: verdana, arial, sans-serif;
-    font-size: 24pt;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #ffffcc;
-    color: #666666;
-    text-decoration: none;
+
+#populares {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
 }
-.icono{
+
+#populares li {
+    margin-bottom: 16px;
+}
+
+.icono {
     text-align: center;
     width: 199px;
     height: 60px;
-    margin-left: 280px;
+    margin-left: 14vw;
 }
+
 #banner:hover {
     cursor: pointer;
 }
-#tabla{
-    float: left;
-    margin-left: 65px;
+
+#tabla {
+
+    /* margin-left: 65px; */
 }
+
 #botonEnviar {
     height: 25px;
     width: 100px;
 }
-#botonEnviar:hover{
-    cursor:pointer;
+
+#botonEnviar:hover {
+    cursor: pointer;
 }
 
-#titulos{
+#titulos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 14pt;
 }
-#tituloForm{
+
+#tituloForm {
     margin-left: 65px;
     width: 372px;
 }
-#tituloIconos{
-    margin-right: 26%;
+
+#tituloIconos {
+    margin-left: 42%;
+    
+    margin-bottom: 8%;
 }
-footer{
-    margin-top: 1%;
+
+footer {
+    margin-top: auto;
 }
+
 .enlaceboton:link, .enlaceboton:visited {
-    border-top: 1px solid #cccccc;
-    border-bottom: 2px solid #666666;
-    border-left: 1px solid #cccccc;
-    border-right: 2px solid #666666;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #11B400;
+    color: white;
+    text-decoration: none;
+    font-size: 18pt;
 }
 
 .enlaceboton:hover {
-    border-bottom: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
+    background: #CACC0E;
 }
-#seccion{
-    display: table-header-group;
+
+header {
+    background-color: #bad63b;
 }
+
+#seccion {}
+
 #banner {
     width: 100%;
     height: 180px;
-    margin-top: 25px;
 }
 
 .titulo {
@@ -114,7 +191,7 @@ footer{
     justify-content: space-around;
     list-style: none;
     padding: 40px;
-    background-color: #c69d6f;
+    background-color: #CACC0E;
 }
 
 #informaciongeneral {
@@ -125,18 +202,18 @@ footer{
 
 .content input {
     margin-left: 35px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .content textarea {
-    margin-left: 35px;  
+    margin-left: 35px;
     width: 247px;
 }
 
 .content select {
     margin-left: 35px;
-    width: 247px;
-    font-size: 20px;
+    width: 223px;
+    font-size: 17px;
 }
 
 .informaciones li {
@@ -151,15 +228,208 @@ footer{
     font-size: 25px;
     padding-top: 25px;
 }
-#tabla div{
+
+#tabla div {
     display: flex;
     justify-content: space-between;
     padding: 5px;
 }
-#enviar{
+
+#enviar {
     width: 338px;
     height: 35px;
 }
+
 textarea {
     resize: none;
+}
+
+.flexsearch--wrapper {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    overflow: hidden;
+    background: transparent;
+    margin: 0;
+    position: static;
+}
+
+.flexsearch--form {
+    overflow: hidden;
+    position: relative;
+}
+
+.flexsearch--input-wrapper {
+    padding: 0 66px 0 0;
+    overflow: hidden;
+}
+
+.flexsearch--input {
+    width: 100%;
+}
+
+/***********************
+ * Configurable Styles *
+ ***********************/
+
+.flexsearch {
+    padding: 0 25px 0 200px;
+}
+
+.flexsearch--input {
+    box-sizing: content-box;
+    border-color: #11B400;
+    border-style: solid;
+    border-width: 5px;
+    color: black;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1.1vw;
+    -webkit-appearance: none;
+}
+
+.flexsearch--submit {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    margin-right: 8px;
+    background: transparent;
+    color: #888;
+    font-family: verdana, arial, sans-serif;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.flexsearch--input:focus {
+    outline: none;
+    border-color: #CACC0E;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+    color: #333;
+}
+
+.flexsearch--submit:hover {
+    color: #333;
+    cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+input:-moz-placeholder {
+    color: #888
+}
+
+#menuHamburguesa {
+    display: none;
+    opacity: 0;
+}
+
+@media(min-width:950px) {
+    .enlaceboton:link, .enlaceboton:visited {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width:950px) {
+    #hamburguesa {
+        display: block;
+        /* float: left; */
+        color: green;
+        font-size: 35px;
+    }
+
+    #menuHamburguesa {
+        visibility: hidden;
+        opacity: 0;
+        height: 0;
+        transition: 1s;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flexsearch--input {
+        font-size: 2vw;
+    }
+
+    #menuHamburguesa.mostrarMenu {
+        height: 297px;
+        visibility: inherit;
+        opacity: 1;
+        transition: 1s;
+
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #menuTotal {
+        display: flex;
+        padding: 3px;
+        /* height: 40px; */
+        align-items: center;
+    }
+}
+
+@media (max-width:360px) {
+    .content {
+        margin-left: 7px;
+        margin-right: 7px;
+    }
+
+    #banner {
+        height: 70px;
+    }
+
+    #titulocomprar {
+        font-size: 37px;
+    }
+
+    #principal ul {
+        list-style-type: none;
+    }
+
+    .flexsearch--input {
+        font-size: 3vw;
+        height: 26px;
+        width: 135px;
+    }
+}
+@media (max-width:530px) {
+    #tabla div{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        flex-direction: column;
+    }
+    .content input{
+        margin-left: 35px;
+        font-size: 18px;
+        width: 200px;
+    }
+    #tituloForm{
+        margin-left: 0px;
+        width: 262px;
+        font-size: 22px;
+    }
+    #enviar{
+        width: 248px;
+    }
+}
+@media (max-width:1560px) {
+    #iconos {
+        display: none;
+    }
+
+    #tabla {
+        width: 428px;
+        margin: 0 auto;
+    }
 }

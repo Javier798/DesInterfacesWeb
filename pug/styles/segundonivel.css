@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-header{
+
+header {
     background-color: #bad63b;
 }
+
 #menu {
     display: flex;
     flex-direction: row;
@@ -18,12 +20,15 @@ header{
     margin-top: 14px;
     margin-bottom: 14px;
 }
-#hamburguesa{
+
+#hamburguesa {
     display: none;
 }
+
 #logo {
     height: 36px;
 }
+
 #buscador {
     margin-right: 1%;
     text-align: -webkit-right;
@@ -34,9 +39,11 @@ header{
 #menu li {
     margin-right: 15px;
 }
-.puntero:hover{
+
+.puntero:hover {
     cursor: pointer;
 }
+
 #menuLogo {
     margin-right: 1%;
     float: left;
@@ -56,9 +63,11 @@ header{
 #banner:hover {
     cursor: pointer;
 }
+
 .noMostrar {
     display: none;
 }
+
 #menuTotal {
     background: #bad63b;
 }
@@ -71,25 +80,23 @@ header{
     color: white;
     text-decoration: none;
     font-size: 18pt;
-    margin-right: 8px;    
+    margin-right: 8px;
 }
 
 .enlaceboton:hover {
     background: #CACC0E;
 }
 
-.content {
-    height: 315px;
-}
 
 #banner {
     width: 100%;
     height: 180px;
 }
+
 #producto {
     width: 415px;
     height: 315px;
-    margin-left: 350px;
+    margin-left: 80px;
     float: left;
 }
 
@@ -97,6 +104,7 @@ header{
     display: flex;
     padding: 10px;
 }
+
 
 #opcionesProducto i {
     padding: 10px;
@@ -119,20 +127,27 @@ header{
     list-style: none;
     padding: 40px;
     background-color: #CACC0E;
+    width: 100%;
 }
+
 #informaciongeneral {
     border-top: black 5px solid;
     ;
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f3df;
+}
 #imgProducto {
     margin-top: 20px;
 }
 
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    clear: both;
+    margin-top: auto;
 }
 
 .informaciones li {
@@ -147,6 +162,7 @@ footer {
     font-size: 25px;
     padding-top: 25px;
 }
+
 .flexsearch--wrapper {
     height: auto;
     width: auto;
@@ -190,6 +206,19 @@ footer {
     -webkit-appearance: none;
 }
 
+h1 {
+    text-align: center;
+    margin: 31px;
+    margin-top: 31px;
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 40px;
+    font-family: verdana, arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: solid #11B400;
+}
+
 .flexsearch--submit {
     position: absolute;
     right: 0;
@@ -228,10 +257,12 @@ footer {
 input:-moz-placeholder {
     color: #888
 }
-#menuHamburguesa{
+
+#menuHamburguesa {
     display: none;
     opacity: 0;
 }
+
 @media(min-width:950px) {
     .enlaceboton:link, .enlaceboton:visited {
         font-size: 1.2vw;
@@ -239,13 +270,14 @@ input:-moz-placeholder {
 }
 
 @media (max-width:950px) {
-    #hamburguesa{
+    #hamburguesa {
         display: block;
         float: left;
         color: green;
-    font-size: 35px;
-    } 
-    #menuHamburguesa{
+        font-size: 35px;
+    }
+
+    #menuHamburguesa {
         visibility: hidden;
         opacity: 0;
         height: 0;
@@ -253,38 +285,65 @@ input:-moz-placeholder {
         display: flex;
         flex-direction: column;
     }
-    .flexsearch--input{
+
+    .flexsearch--input {
         font-size: 2vw;
     }
-    #menuHamburguesa.mostrarMenu{
+
+    #menuHamburguesa.mostrarMenu {
         height: 297px;
         visibility: inherit;
         opacity: 1;
         transition: 1s;
-        
+
     }
-    #menu{
+
+    #menu {
         display: none;
     }
-    #menuTotal{
+
+    #menuTotal {
         height: 40px;
     }
 }
-@media (max-width:360px){
-    .content{
+
+@media (max-width:361px) {
+    #producto{
+        width: 299px;
+        height: 195px;
+        margin-left: 0;
+        float: left;
+    }
+    .content {
         margin-left: 7px;
         margin-right: 7px;
     }
-    #populares{
+
+    #populares {
         flex-direction: column;
     }
-    #instruccionescompra{
+
+    #instruccionescompra {
         flex-direction: column;
     }
-    #banner{
+
+    #banner {
         height: 70px;
     }
-    #anuncios{
+
+    #opcionesProducto i{
+        padding: 10px;
+        margin-left: 5px;
+        font-size: 20px;
+    }
+    #opcionesProducto p{
+        font-size: 16px;
+    }
+    #opcionesProducto{
+        
+        margin-left: 0;
+    }
+    #anuncios {
         width: 100%;
         height: 75px;
         text-align: center;
@@ -293,15 +352,25 @@ input:-moz-placeholder {
         background-image: url(../img/aununcio.png);
         background-size: cover;
     }
-    #titulocomprar{
+
+    #titulocomprar {
         font-size: 37px;
     }
-    #principal ul{
+
+    #principal ul {
         list-style-type: none;
     }
-    .flexsearch--input{
+
+    .flexsearch--input {
         font-size: 3vw;
         height: 26px;
         width: 135px;
     }
 }
+/*
+@media (max-width:1027px) {
+    #opcionesProducto {
+        clear: both;
+        margin-left: 91px;
+    }
+}*/
